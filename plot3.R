@@ -1,6 +1,9 @@
 ## Download, unzip and open the file containing the data
 download.file("https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip", destfile = "power.zip", method = "curl")
 unzip("power.zip")
+
+## In order to be reproduced, the file.choose function has been included in order to allow 
+## the user to select the appropriate path for the desired workspace
 db.file <- file.choose()
 
 ## Characters "?" and "" are defined as NA
